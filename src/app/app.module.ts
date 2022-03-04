@@ -17,6 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { OrderComponent } from './components/order/order.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ProductFilterPipe } from './Pipes/product-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     ContactComponent,
     OrderComponent,
     ProductListComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
