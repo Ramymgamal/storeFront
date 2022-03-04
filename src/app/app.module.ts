@@ -18,6 +18,11 @@ import { OrderComponent } from './components/order/order.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductFilterPipe } from './Pipes/product-filter.pipe';
+import { AlertComponent } from './Shared/alert/alert.component';
+import { ApplicationErrorComponent } from './Shared/application-error/application-error.component';
+import { PageNotFoundComponent } from './Shared/page-not-found/page-not-found.component';
+import { ResourceNotFoundComponent } from './Shared/resource-not-found/resource-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,11 +41,16 @@ import { ProductFilterPipe } from './Pipes/product-filter.pipe';
     OrderComponent,
     ProductListComponent,
     ProductDetailsComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    AlertComponent,
+    ApplicationErrorComponent,
+    PageNotFoundComponent,
+    ResourceNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
